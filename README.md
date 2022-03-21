@@ -33,3 +33,6 @@ http://shumin.co.kr/nas-docker-ssh-%EC%A0%91%EC%86%8D-error-key_exchange_identif
 https://jybaek.tistory.com/785  
 https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=rladnjsqll&logNo=221503725459&parentCategoryNo=&categoryNo=15&viewDate=&isShowPopularPosts=true&from=search
 https://velog.io/@1_ne/%EC%97%90%EB%9F%ACRuntime-Error-with-DataLoader-exited-unexpectedly  
+
+
+https://github.com/fastai/fastbook/blob/master/01_intro.ipynb
