@@ -7,8 +7,8 @@
 #RuntimeError: tensor.H is only supported on matrices (2-D tensors)
 
 #solution
-pip install --upgrade pip
-pip install torch --upgrade
+pip install --upgrade pip,
+pip install torch --upgrade,
 pip install fastai --upgrade
 
 #related URL
