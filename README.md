@@ -1,4 +1,4 @@
-# Tips  
+# Tips for_docker_dnn
 
 # Errors that may occur when installing PathPy or PyTorch  
 
