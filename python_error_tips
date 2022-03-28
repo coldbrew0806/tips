@@ -1,0 +1,17 @@
+# ERROR: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+# Solution
+df = pd.DataFrame(columns=['a', 'b'])
+df = pd.concat([df, pd.DataFrame.from_records([{ 'a': 1, 'b': 2 }])])
+
+# To read only UTF-8 Text File 
+
+txt = os.path.join(adir, afile)
+with open(txt, encoding='utf-8') as file:
+return file.readline()
+
+# To read UTF-8 and UTF-8-BOM Text File
+
+txt = os.path.join(adir, afile)
+with open(txt, encoding='utf-8-sig') as file:
+return file.readline()
