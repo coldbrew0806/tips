@@ -41,7 +41,7 @@ docker run -it --shm-size=20G -v local_shared_folder:docker_shared_foler --name=
 You can configure to access GPU resources at container startup by adding the --gpus flag.
 If the ubuntu(linux) container is running and the nvidia-smi command works well, the setup is successful.
 
-$docker run -it --shm-size=20G --gpus all -v local_shared_folder:docker_shared_foler --name=container_name image_name
+$docker run -it --shm-size=20G --gpus all -v local_shared_folder:docker_shared_foler --name=container_name image_name  
 $nidiva-smi  # Find out if a GPU is available
 
 
