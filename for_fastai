@@ -1,0 +1,14 @@
+# NameError: name 'PILimage' is not defined fastai
+
+#solution
+import fastai 
+from fastai.vision.all import *
+
+#examlple
+import fastai 
+from fastai.vision.all import *
+
+fnames = get_image_files('/home/docker_share/data')
+img = PILImage.create(fnames[0])
+img.show()
+
