@@ -1,0 +1,50 @@
+# ERROR: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+#Solution
+df = pd.DataFrame(columns=['a', 'b'])
+df = pd.concat([df, pd.DataFrame.from_records([{ 'a': 1, 'b': 2 }])])
+
+# To read only UTF-8 Text File 
+
+#Solution
+txt = os.path.join(adir, afile)
+with open(txt, encoding='utf-8') as file:
+return file.readline()
+
+# To read UTF-8 and UTF-8-BOM Text File
+
+#Solution
+txt = os.path.join(adir, afile)
+with open(txt, encoding='utf-8-sig') as file:
+return file.readline()
+
+# Find full path of the Python interpreter
+
+#Solution
+import sys
+print(sys.executable)
+
+# Find out if a GPU is available. 
+
+#Solution
+$nvidia-smi
+
+# Code to use a specific GPU
+
+#Solution
+import os
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"  # Arrange GPU devices starting from 0
+os.environ["CUDA_VISIBLE_DEVICES"]= "2"  # Set the GPU 2 to use
+
+# Code to use multiple GPUs ? it is not parallel processing
+
+#Solution
+import os
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"  # Arrange GPU devices starting from 0
+os.environ["CUDA_VISIBLE_DEVICES"]= "1,2"  # Set the GPU 1 and 2 to use
+
+
+# reference
+https://stackoverflow.com/questions/2589711/find-full-path-of-the-python-interpreter
+https://artiiicy.tistory.com/61
+https://tutorials.pytorch.kr/beginner/blitz/data_parallel_tutorial.html
