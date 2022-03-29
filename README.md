@@ -35,6 +35,9 @@ In order to train the deep learning model in the Docker container, it is needed 
 
 docker run -it --shm-size=20G -v local_shared_folder:docker_shared_foler --name=container_name image_name
 
+#related URL  
+https://jybaek.tistory.com/785  
+
 # fastai needs docker with gpu  
 
 #solution
@@ -44,20 +47,11 @@ If the ubuntu(linux) container is running and the nvidia-smi command works well,
 $docker run -it --shm-size=20G --gpus all -v local_shared_folder:docker_shared_foler --name=container_name image_name  
 $nidiva-smi  # Find out if a GPU is available
 
-
-
 # docker: invalid reference format: repository name must be lowercase.
 
 #solution
 Docker doesn't even allow mixed characters.
 
-
-
-#related URL  
-https://jybaek.tistory.com/785  
-https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=rladnjsqll&logNo=221503725459&parentCategoryNo=&categoryNo=15&viewDate=&isShowPopularPosts=true&from=search
-https://velog.io/@1_ne/%EC%97%90%EB%9F%ACRuntime-Error-with-DataLoader-exited-unexpectedly  
-https://artiiicy.tistory.com/61
-
+------------
 
 https://github.com/fastai/fastbook/blob/master/01_intro.ipynb
